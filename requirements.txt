@@ -1,0 +1,15 @@
+# NetGuard - Network Monitoring Tool Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core dependencies
+scapy>=2.5.0
+psutil>=5.9.0
+colorama>=0.4.6
+
+# Optional: For advanced analysis
+numpy>=1.24.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+
+# Optional: For web dashboard
+flask>=2.3.0

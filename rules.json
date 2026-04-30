@@ -1,0 +1,58 @@
+[
+  {
+    "name": "block_malware_port_4444",
+    "dst_port": 4444,
+    "action": "block",
+    "priority": 1
+  },
+  {
+    "name": "block_netbus",
+    "dst_port": 12345,
+    "action": "block",
+    "priority": 1
+  },
+  {
+    "name": "block_backorifice",
+    "dst_port": 31337,
+    "action": "block",
+    "priority": 1
+  },
+  {
+    "name": "alert_ssh_brute_force",
+    "dst_port": 22,
+    "action": "alert",
+    "priority": 10
+  },
+  {
+    "name": "log_http_traffic",
+    "dst_port": 80,
+    "protocol": "TCP",
+    "action": "log",
+    "priority": 50
+  },
+  {
+    "name": "log_https_traffic",
+    "dst_port": 443,
+    "protocol": "TCP",
+    "action": "log",
+    "priority": 50
+  },
+  {
+    "name": "block_large_packets",
+    "min_size": 65000,
+    "action": "block",
+    "priority": 5
+  },
+  {
+    "name": "alert_telnet",
+    "dst_port": 23,
+    "action": "alert",
+    "priority": 20
+  },
+  {
+    "name": "block_suspicious_irc",
+    "dst_port": 6667,
+    "action": "block",
+    "priority": 15
+  }
+]
